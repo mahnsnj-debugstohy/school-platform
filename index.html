@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#0b1224">
+<title>أكاديمية العلوم | اختبار التفاعلات الكيميائية</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="bg-orb orb1"></div><div class="bg-orb orb2"></div>
+
+<header class="topbar">
+  <div class="brand"><span class="brand-icon">⚗️</span><div><b>أكاديمية العلوم</b><small>منصة الاختبارات</small></div></div>
+  <div class="top-badge">تفاعلات كيميائية <span>🧪</span></div>
+</header>
+
+<main>
+<section id="home" class="screen active">
+  <div class="welcome-banner">
+    <div class="welcome-channel">🤎 دَفْعَة تَالِتَة إِعْدَادِي 2027 🤎</div>
+    <div class="welcome-line">أهلًا وسهلًا بكم في منصة الاختبارات 🎓</div>
+    <div class="admin-name">𝓜𝓸𝓱𝓪𝓶𝓮𝓭 <span>• الأدمن</span></div>
+  </div>
+  <div class="hero card">
+    <div class="hero-icon">🧪</div>
+    <span class="eyebrow">اختبار تفاعلي • الصف الثالث الإعدادي</span>
+    <h1>اختبار <span>التفاعلات الكيميائية</span></h1>
+    <p>اختبر فهمك للدرس، جاوب على الأسئلة واحصل على نتيجتك فورًا.</p>
+    <div class="stats">
+      <div><strong>10</strong><small>أسئلة</small></div>
+      <div><strong>100</strong><small>درجة</small></div>
+      <div><strong>10</strong><small>درجات للسؤال</small></div>
+    </div>
+    <label>اسم الطالب</label>
+    <input id="name" maxlength="40" placeholder="اكتب اسمك هنا..." autocomplete="off">
+    <button class="primary" id="start">🚀 ابدأ الاختبار</button>
+    <div class="hint">💡 اقرأ السؤال جيدًا قبل اختيار الإجابة.</div>
+  </div>
+</section>
+
+<section id="quiz" class="screen">
+  <div class="quiz-wrap">
+    <div class="quiz-head">
+      <div><small>الطالب</small><b id="student"></b></div>
+      <div class="score-pill">⭐ <span id="score">0</span> / 100</div>
+    </div>
+    <div class="progress-line"><div id="bar"></div></div>
+    <div class="question-meta"><span id="counter"></span><span id="percent">10%</span></div>
+    <div class="card question-card">
+      <div class="q-number" id="qnum">01</div>
+      <h2 id="question"></h2>
+      <div id="options" class="options"></div>
+      <div id="feedback"></div>
+      <button id="next" class="primary next hidden">السؤال التالي ➜</button>
+    </div>
+  </div>
+</section>
+
+<section id="result" class="screen">
+  <div class="card result-card">
+    <div class="trophy">🏆</div>
+    <span class="eyebrow">نتيجة الاختبار</span>
+    <h1>أحسنت يا <span id="resultName"></span>!</h1>
+    <div class="score-circle"><strong id="final">0</strong><small>/ 100</small></div>
+    <div class="result-grid">
+      <div><span>الإجابات الصحيحة</span><b id="correct"></b></div>
+      <div><span>الإجابات الخاطئة</span><b id="wrong"></b></div>
+      <div><span>التقدير</span><b id="grade"></b></div>
+    </div>
+    <p id="message"></p>
+    <button class="primary" id="again">🔄 إعادة الاختبار</button>
+  </div>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
